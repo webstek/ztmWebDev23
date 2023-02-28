@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+}
+
+.green {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.zone {
+  display: flex;
+  cursor: pointer;
+  /* display: inline-block; */
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+
+.zone:hover {
+  scale:0.9;
+  box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+}
+
+.green {
+  background: linear-gradient(rgb(150,215,50), rgb(0,170,0));
+}
+
+.red {
+  background: linear-gradient(rgb(220,20,100),rgb(200,0,0));
+}
+
+.blue {
+  background: linear-gradient(rgb(150,150,250),rgb(0,20,160));
+}
+
+.dark {
+  background: linear-gradient(rgb(150,150,150),rgb(60,60,60));
+}
