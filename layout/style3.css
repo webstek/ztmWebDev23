@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Arial';
 }
 
 .zone {
@@ -16,11 +17,11 @@ body {
 }
 
 .blue {
-  background: linear-gradient(#bbf, #66f);
+  background: linear-gradient(rgb(72, 72, 255), rgb(26, 26, 178));
 }
 
 .gold {
-  background: linear-gradient(#fd7, #fa0);
+  background: linear-gradient(rgb(251, 173, 30), rgb(221, 150, 6));
 }
 
 /* NAV BAR */
@@ -31,6 +32,12 @@ body {
   font-size: 0.7em;
   margin: 0;
   padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -61,6 +68,10 @@ a {
   height: 50vh;
 }
 
+.cover {
+  height: 100%;
+}
+
 /* GRID */
 .grid-wrapper {
   display: grid;
@@ -75,8 +86,12 @@ a {
 }
 
 .box {
-  background-color: #444;
+  background-color: #333;
   padding: 130px;
+}
+
+.box:hover {
+  transform: rotate(3deg);
 }
 
 /* FOOTER */
